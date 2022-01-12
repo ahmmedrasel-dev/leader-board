@@ -1,7 +1,7 @@
 /* ---------------
        Fonts 
 -----------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap");
 
 /* ---------------------
        Common Css
@@ -20,12 +20,14 @@ body {
 
 main {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .container {
 	width: 870px;
 	background-color: #fff;
+	margin-bottom: 30px;
 }
 
 hr {
@@ -39,7 +41,8 @@ hr {
 ----------------------- */
 
 .top-player,
-.top-blogs {
+.top-blogs,
+.latest-course {
 	padding: 30px;
 }
 
@@ -101,4 +104,58 @@ hr {
 .blog-author a {
 	text-decoration: none;
 	color: #562eff;
+}
+
+.courses {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
+}
+
+.course {
+	box-shadow: 0px 0px 26px -18px;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.course-banner img {
+	width: 224px;
+}
+
+.course-title {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	padding: 10px 0px;
+}
+
+.mentor {
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	color: #ed6b4f;
+}
+
+.review-duration {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.reting i,
+p,
+span {
+	font-size: 14px;
+}
+
+.reting i {
+	color: #ffc014;
+}
+
+.time {
+	padding: 5px 10px;
+	background-color: #ffe4e8;
+	border-radius: 20px;
+	color: #ff4a60;
 }
